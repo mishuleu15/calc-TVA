@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TVA Calc</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Calculator TVA</h1>
+            <form>
+                <h3>Suma fara TVA</h3>
+                <p><input type="text" id="sum" placeholder="Suma in Lei exe 1500" /></p>
+                <select id="select-procent">
+                    <option disabled selected value="0">Optiuni</option>
+                    <option class="procent" value="0.24">24%</option>
+                    <option class="procent" value="0.2">20%</option>
+                    <option class="procent" value="0.19">19%</option>
+                    <option class="procent" value="0.9">9%</option>
+                    <option class="procent" value="0.5">5%</option>
+                </select>
+                <h3>Valoare TVA</h3>
+                <span type="text" id="valoare-tva"></span>
+                <h3>Suma cu TVA</h3>
+                <span id="suma-cu-TVA"></span>
+            </form>
+            <button id="button">Calculeaza</button>
+        </div>
+        <!-- Script -->
+        <script src="script.js"></script>
+    </body>
+</html>
